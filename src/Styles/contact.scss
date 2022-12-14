@@ -1,0 +1,277 @@
+@import './Utilities.scss';
+
+#contact-details {
+    min-height: 100vh;
+    background: linear-gradient(90deg, #be8cef 0%, rgba(61, 46, 232, 0.83) 100%);
+
+    .heading {
+        padding: 2rem 0;
+
+        .title {
+            h4 {
+                text-transform: capitalize;
+                font-size: 2rem;
+                font-weight: 500;
+                color: #ffffff;
+            }
+
+            p {
+                color: $text-white;
+            }
+        }
+
+        .btn-quotes {
+            border: 2px solid rgb(255, 255, 255);
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                margin-left: 10px;
+                color: $purple;
+                font-family: $font-family-4;
+                font-weight: 600;
+                color: $purple;
+            }
+        }
+    }
+
+    .section {
+        margin-top: 2rem;
+        padding: 2rem 0;
+
+        .card {
+            padding: 3.5rem 0;
+
+            .number {
+                a {
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    color: $purple;
+                    font-family: $font-family-8;
+                }
+            }
+        }
+
+    }
+}
+
+#news {
+    min-height: 30vh;
+    background-color: #333333;
+    padding: 2.5rem 0;
+
+    .news {
+        h2 {
+            color: $text-white;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+            font-family: $font-family-2;
+        }
+
+        form {
+            padding: 1.5rem 0;
+
+            input {
+                padding: 0.5rem 0.4rem;
+                background-color: transparent;
+                outline: none !important;
+                border: 1px solid $text-white;
+                text-transform: capitalize;
+                color: $text-white;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+::placeholder {
+    color: $text-white;
+    font-family: $font-family-5;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#inq {
+    min-height: 100vh;
+    background: linear-gradient(90deg, #be8cef 0%, rgba(61, 46, 232, 0.83) 100%);
+    overflow: hidden;
+    padding: 2rem 0;
+
+    .container {
+        .row {
+
+            .left-container {
+                background-color: #00b4cf;
+
+                .inner-left {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 2.5rem;
+
+                    h4 {
+                        color: $text-white;
+                        font-weight: 600;
+                        font-family: $font-family-8;
+                        text-transform: capitalize;
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 1rem;
+                        color: $text-white;
+                    }
+                }
+            }
+
+            .right-container {
+                background-color: $text-white;
+                height: 100%;
+            }
+        }
+    }
+}
+
+#parrlex {
+    min-height: 70vh;
+    position: relative;
+
+    .showcase {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../images/All\ Img/contact-page.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+
+        .call-to-action {
+            height: 70vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            strong {
+                font-size: 3.5rem;
+                font-family: $font-family-1;
+                color: $text-white;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .contact {
+                background: linear-gradient(90deg, #be8cef 0%, rgba(61, 46, 232, 0.83) 100%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5rem;
+                cursor: pointer;
+                text-decoration: none;
+
+                .headphone {
+                    font-size: 2.6rem;
+                    color: $orange;
+                }
+
+                a {
+                    text-transform: capitalize;
+                    font-size: 1.5rem;
+                    color: #f0eeee;
+                    font-family: $font-family-4;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    #contact-details {
+        .heading {
+            flex-direction: column;
+
+            .title {
+                text-align: center;
+            }
+        }
+    }
+
+    #news {
+
+        .news {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        form {
+            flex-direction: column;
+
+            input {
+                width: 250px;
+                font-size: 1rem;
+            }
+        }
+
+        ::placeholder {
+            font-size: 0.8rem;
+        }
+    }
+
+    #inq {
+        .container {
+            .row {
+                .right-container {
+                    padding: 2rem 1rem;
+
+                    form {
+
+                        .identy {
+                            flex-direction: column;
+                            align-items: flex-start !important;
+
+
+                            #messege {
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #parrlex {
+        .call-to-action {
+            flex-direction: column;
+            justify-content: center !important;
+            align-items: center;
+
+            strong {
+                font-size: 1.7rem !important;
+            }
+
+            .contact {
+                padding: 1rem !important;
+
+                .headphone {
+                    font-size: 2rem !important;
+                }
+
+                a {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    }
+}

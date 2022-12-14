@@ -1,0 +1,89 @@
+@import './Utilities.scss';
+
+#services-info {
+    min-height: 100vh;
+
+    .row {
+        padding: 4rem 0;
+
+        .services-img {
+
+            img {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 15px;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .info-part {
+            h4 {
+                font-family: $font-family-3;
+                color: $purple;
+                font-weight: 600;
+                letter-spacing: 0.7px;
+            }
+
+            small {
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+
+            ul {
+                li {
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    line-height: 1.7rem;
+                    color: $purple;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+#services-part {
+    background: linear-gradient(#ffafbcdc, #ffc3a0);
+    padding: 2rem 0 3rem 0;
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+        .services-card {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+
+            a {
+                padding: 3rem 0;
+                text-decoration: none;
+
+                .services-img {
+                    width: 90px;
+                    margin: 0 auto 30px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h4 {
+                    text-transform: capitalize;
+                    color: $purple;
+                    font-size: 19px;
+                    font-family: $font-family-4;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #333333c4;
+                    font-weight: 500;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
